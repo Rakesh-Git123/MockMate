@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard';
 import { InterviewProvider } from './Context/InterviewContext';
 import Interview from './pages/Interview';
-import Feedback from './pages/FeedBack';
+import Feedback from './pages/Feedback';
 import ResumeAnalyzer from './pages/ResumeAnalyzer';
 const App = () => {
     return (
