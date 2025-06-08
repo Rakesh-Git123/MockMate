@@ -17,7 +17,7 @@ const Home = () => {
 
   const getMyResponses = async () => {
     try {
-      const res = await axios.get(`https://mockmate-ntab.onrender.com/api/interviewResponse/my-responses`, {
+      const res = await axios.get(`https://mockmate-q1ub.onrender.com/api/interviewResponse/my-responses`, {
         withCredentials: true
       });
       setMyResponses(res.data);

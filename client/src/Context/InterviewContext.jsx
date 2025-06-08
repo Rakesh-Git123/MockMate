@@ -11,7 +11,7 @@ export const InterviewProvider = ({ children }) => {
     const [loading,setLoading]=useState(false)
     const createInterview = async( title, questions,difficulty) => {
         try {
-            let res = await axios.post("https://mockmate-ntab.onrender.com/api/interview",
+            let res = await axios.post("https://mockmate-q1ub.onrender.com/api/interview",
                 { title, questions,difficulty },
                 { withCredentials: true }
             );
@@ -33,7 +33,7 @@ export const InterviewProvider = ({ children }) => {
     const getAllInterviews = async () => {
         setLoading(true)
         try {
-            const res = await axios.get("https://mockmate-ntab.onrender.com/api/interview", {
+            const res = await axios.get("https://mockmate-q1ub.onrender.com/api/interview", {
                 withCredentials: true
             });
     
@@ -47,7 +47,7 @@ export const InterviewProvider = ({ children }) => {
 
     const deleteInterview = async (id) => {
         try {
-          const res = await axios.delete(`https://mockmate-ntab.onrender.com/api/interview/${id}`, {
+          const res = await axios.delete(`https://mockmate-q1ub.onrender.com/api/interview/${id}`, {
             withCredentials: true,
           });
       

@@ -18,7 +18,7 @@ const Interview = () => {
 
   const getInterview = async () => {
     try {
-      const res = await axios.get(`http://localhost:4000/api/interview/${id}`, {
+      const res = await axios.get(`https://mockmate-q1ub.onrender.com/api/interview/${id}`, {
         withCredentials: true
       });
       setInterview(res.data);
@@ -105,7 +105,7 @@ const Interview = () => {
     setLoading(true)
     try {
       const res = await axios.post(
-        "https://mockmate-ntab.onrender.com/api/interviewResponse",
+        "https://mockmate-q1ub.onrender.com/api/interviewResponse",
         {
           interviewId: interview._id,
           responses: allResponses
