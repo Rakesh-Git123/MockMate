@@ -16,6 +16,8 @@ Improvement Suggestions:
 1. <suggestion>
 2. <suggestion>
 3. <suggestion>
+4. <suggestion>
+5. <suggestion>
 
 Resume:
 ${resumeText}
