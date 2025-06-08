@@ -5,6 +5,7 @@ import { InterviewContext } from '../Context/InterviewContext';
 const Admin = () => {
     const { createInterview, getAllInterviews, interviews, deleteInterview, loading } = useContext(InterviewContext);
     const [isOpen, setIsOpen] = useState(false);
+    const [submitting, setSubmitting] = useState(false);
     const [interview, setInterview] = useState({
         title: '',
         questions: [''],
