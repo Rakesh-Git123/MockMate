@@ -12,7 +12,7 @@ const Feedback = () => {
     try {
       setIsLoading(true);
       const res = await axios.get(
-        `http://localhost:4000/api/interviewResponse/${interviewId}`,
+        `https://mockmate-ntab.onrender.com/api/interviewResponse/${interviewId}`,
         { withCredentials: true }
       );
       setResponse(res.data);

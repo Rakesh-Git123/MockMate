@@ -105,7 +105,7 @@ const Interview = () => {
     setLoading(true)
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/interviewResponse",
+        "https://mockmate-ntab.onrender.com/api/interviewResponse",
         {
           interviewId: interview._id,
           responses: allResponses

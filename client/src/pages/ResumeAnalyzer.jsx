@@ -22,7 +22,7 @@ const ResumeAnalyzer = () => {
     formData.append("resume", file);
 
     try {
-      const response = await fetch("http://localhost:4000/api/resume/analyze", {
+      const response = await fetch("https://mockmate-ntab.onrender.com/api/resume/analyze", {
         method: "POST",
         body: formData
       });

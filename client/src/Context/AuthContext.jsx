@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
             const { name, email, picture } = decoded;
 
             const res = await axios.post(
-                'http://localhost:4000/api/auth/login',
+                'https://mockmate-ntab.onrender.com/api/auth/login',
                 { name, email, picture },
                 { withCredentials: true }
             );
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
     const logout = async () => {
         try {
-            let res = await axios.post("http://localhost:4000/api/auth/logout",
+            let res = await axios.post("https://mockmate-ntab.onrender.com/api/auth/logout",
                 {},
                 {
                     withCredentials: true,
@@ -62,7 +62,7 @@ export const AuthProvider = ({ children }) => {
 
     const checkAuth = async () => {
         try {
-            const res = await axios.get("http://localhost:4000/api/auth/check", {
+            const res = await axios.get("https://mockmate-ntab.onrender.com/api/auth/check", {
                 withCredentials: true,
                 headers: {
                     "Content-Type": "application/json"
