@@ -2,6 +2,8 @@
 
 **MockMate** is a full-stack AI-powered mock interview platform built using the MERN stack. It helps users prepare for job interviews by simulating real interview scenarios with voice-based answers, AI feedback, and resume analysis.
 
+🚀 Live Demo: http://mockmatepro.netlify.app/
+
 ---
 
 ## 🌟 Features
